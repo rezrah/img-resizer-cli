@@ -5,7 +5,7 @@ This command-line interface allows you to resize images easily. You can specify 
 To resize a single image, run the following command:
 
 ```bash
-npx img-resizer-cli --file <path-to-file> --width <width> --output <path-to-output-folder> --quality <quality> --format <image-format>
+npx img-resizer-cli@latest --file <path-to-file> --width <width> --output <path-to-output-folder> --quality <quality> --format <image-format>
 ```
 
 If you want to resize a folder, use the --folder flag instead of --file.
