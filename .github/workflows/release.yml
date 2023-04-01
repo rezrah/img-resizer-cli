@@ -5,6 +5,8 @@ on:
     branches:
       - main
 
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
 jobs:
   release:
     name: Release
@@ -12,13 +14,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
           persist-credentials: false
 
       - name: Set up Node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 18
 
@@ -28,9 +30,9 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Create pre-release or publish
+      - name: Create Release Pull Request or Publish to npm
         id: changesets
-        uses: changesets/action@main
+        uses: changesets/action@v1
         with:
           title: Release tracking
           publish: npm run release
