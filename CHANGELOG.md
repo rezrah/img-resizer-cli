@@ -1,5 +1,11 @@
 # img-resizer-cli
 
+## 0.1.3
+
+### Patch Changes
+
+- [`4c2df1c`](https://github.com/rezrah/img-resizer-cli/commit/4c2df1c61651243b2df08eadcd899f5f0b3c2d02) Thanks [@rezrah](https://github.com/rezrah)! - add required dependencies to run cli functions
+
 ## 0.1.2
 
 ### Patch Changes
