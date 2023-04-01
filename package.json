@@ -1,6 +1,6 @@
 {
   "name": "img-resizer-cli",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A command line utility to resize and optimize images",
   "author": "Reza Rahman",
   "license": "MIT",
