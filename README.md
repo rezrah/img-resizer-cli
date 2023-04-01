@@ -1,44 +1,15 @@
-Image Resizer
-Image Resizer is a Node.js command line utility to resize images in a given folder and its subdirectories. It supports various output formats and allows you to customize the quality of the resized images.
+# Image resizer CLI
 
-Features
-Resize images in a specified folder and its subdirectories
-Customize the width of the resized images
-Set the output format (JPEG, PNG, or WEBP)
-Set the quality of the output images
-Optionally lowercase the filenames
-Optionally remove spaces from the filenames
-Save resized images to a specified output folder or the same location as the input folder
-Prerequisites
-Node.js (https://nodejs.org/)
-npm (comes bundled with Node.js)
-Installation
-Clone this repository or download the source code.
-Navigate to the project directory using the command line.
-Run npm install to install the required dependencies.
-Usage
-arduino
-Copy code
-Usage: node index.js -f [folder] -w [width] [-o output] [-q quality] [-t format] [--lowercase] [--remove-spaces]
+This command-line interface allows you to resize images easily. You can specify a file or a folder, an output directory, image width, image quality, image format, and some optional flags such as lowercase filenames and removing spaces from filenames.
 
-Options:
-  -f, --folder       Input folder (required)
-  -w, --width        Width of resized images (required)
-  -o, --output       Output folder (optional, default: same as input folder)
-  -q, --quality      Quality for output images (optional, default: 100)
-  -t, --format       Output format (jpeg, png, webp) (optional, default: jpeg)
-  --lowercase        Lowercase filenames (optional)
-  --remove-spaces    Remove spaces from filenames (optional)
-Example
-To resize all images in the input folder with a width of 800px, save them as PNG with a quality of 90, and store the resized images in the output folder, run:
+To resize a single image, run the following command:
 
-css
-Copy code
-node index.js -f input -w 800 -o output -q 90 -t png
-If you also want to lowercase filenames and remove spaces from them, run:
+```bash
+node dist/index.js --file <path-to-file> --width <width> --output <path-to-output-folder> --quality <quality> --format <image-format>
+```
 
-css
-Copy code
-node index.js -f input -w 800 -o output -q 90 -t png --lowercase --remove-spaces
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+If you want to process a folder, use the --folder flag instead of --file.
+
+The supported image formats are jpeg, png, gif, and webp.
+
+This project is licensed under the Mozilla Public License 2.0.
