@@ -68,7 +68,7 @@ const progressBar = new cliProgress.SingleBar(
   cliProgress.Presets.shades_classic
 );
 
-const isImage = (fileName: string): boolean => {
+export const isImage = (fileName: string): boolean => {
   const extensions = ['.jpg', '.jpeg', '.png', '.gif', '.webp'];
   const extension = path.extname(fileName).toLowerCase();
   if (extensions.includes(extension)) {
@@ -139,7 +139,7 @@ const handleFolder = async (
   }
 };
 
-const getTotalFilesCount = async (dir: string): Promise<number> => {
+export const getTotalFilesCount = async (dir: string): Promise<number> => {
   let count = 0;
 
   const processItem = async (itemPath: string) => {
