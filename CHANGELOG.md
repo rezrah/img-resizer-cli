@@ -1,5 +1,11 @@
 # img-resizer-cli
 
+## 0.1.4
+
+### Patch Changes
+
+- [`0987314`](https://github.com/rezrah/img-resizer-cli/commit/0987314705b70878b74217fd9348251e6441952d) Thanks [@rezrah](https://github.com/rezrah)! - add warnings to lowercase and remove-spaces arguments, to advise requirement for output
+
 ## 0.1.3
 
 ### Patch Changes
