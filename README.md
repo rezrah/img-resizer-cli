@@ -35,13 +35,13 @@ Here are some examples of how you can use the Image Resizer CLI tool:
 
 ```bash
 # Resizing and optimizing a single image
-img-resizer-cli --file ~/Photos/example.jpg --width 1000 -q 90 -o ~/Photos/resized/
+npx img-resizer-cli --file ~/Photos/example.jpg --width 1000 -q 90 -o ~/Photos/resized/
 
 # Resize all images in a folder and its subdirectories to 500 pixels wide and output to a different folder
-img-resizer-cli --folder ~/Photos/ --width 500 -o ~/Photos/resized/
+npx img-resizer-cli --folder ~/Photos/ --width 500 -o ~/Photos/resized/
 
 # Resize images in a folder to 300 pixels wide, convert to GIF format, and remove spaces from the file names
-img-resizer-cli --folder ~/Photos/ --width 300 --format gif --remove-spaces
+npx img-resizer-cli --folder ~/Photos/ --width 300 --format gif --remove-spaces
 ```
 
 ## Options
