@@ -1,8 +1,12 @@
-# Image resizer CLI
+## Image resizer CLI
+
+<img src="https://user-images.githubusercontent.com/13340707/229492260-2fc64739-8039-491b-80d0-73fd47d8eac8.png" alt="Example of img-resizer-cli being run in a command line with a progress indicating appearing beneath it, showing 44% completion rate" width="600">
+<br />
+<br />
 
 This command-line interface helps quickly resize and optimize image files.
 
-## Features
+### Features
 
 - Resize images quickly and easily
 - Supports resizing of single images or entire folders
@@ -11,7 +15,7 @@ This command-line interface helps quickly resize and optimize image files.
 
 You can specify a file or a folder, along with some optional flags such as `quality`. `lowercase` and `remove-spaces`.
 
-## Installation
+### Installation
 
 You can install the Image Resizer CLI tool using npm. To install, simply run the following command:
 
@@ -19,7 +23,7 @@ You can install the Image Resizer CLI tool using npm. To install, simply run the
 npm install -g img-resizer-cli
 ```
 
-### Usage
+#### Usage
 
 To resize a single image, run the following command:
 
@@ -29,7 +33,7 @@ npx img-resizer-cli --file <path-to-file> --width <width> --output <path-to-outp
 
 If you want to resize a folder, use the `--folder` flag instead of `--file`.
 
-## Examples
+### Examples
 
 Here are some examples of how you can use the Image Resizer CLI tool:
 
@@ -44,7 +48,7 @@ npx img-resizer-cli --folder ~/Photos/ --width 500 -o ~/Photos/resized/
 npx img-resizer-cli --folder ~/Photos/ --width 300 --format gif --remove-spaces
 ```
 
-## Options
+### Options
 
 | Option                 | Description                                                                                                   |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------- |
@@ -56,10 +60,10 @@ npx img-resizer-cli --folder ~/Photos/ --width 300 --format gif --remove-spaces
 | `--lowercase`          | (Optional) Converts the file name to lowercase                                                                |
 | `--remove-spaces`      | (Optional) Removes spaces from the file name                                                                  |
 
-## Contributing
+### Contributing
 
 Contributions to this project are welcome! If you find a bug or have an idea for a new feature, please submit an issue or a pull request.
 
-## License
+### License
 
 This project is licensed under the Mozilla Public License 2.0.
