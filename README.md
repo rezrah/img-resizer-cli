@@ -1,8 +1,6 @@
 ## Image resizer CLI
 
 <img src="https://user-images.githubusercontent.com/13340707/229492260-2fc64739-8039-491b-80d0-73fd47d8eac8.png" alt="Example of img-resizer-cli being run in a command line with a progress indicating appearing beneath it, showing 44% completion rate" width="600">
-<br />
-<br />
 
 This command-line interface helps quickly resize and optimize image files.
 
