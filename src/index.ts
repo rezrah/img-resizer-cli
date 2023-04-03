@@ -101,9 +101,15 @@ const handleFile = async (filePath: string): Promise<void> => {
       let fileName = path.basename(filePath);
 
       if (argv.lowercase) {
+        if (!outputPath) {
+          console.warn('Error: Cannot use --lowercase without --output');
+        }
         fileName = fileName.toLowerCase();
       }
       if (argv['remove-spaces']) {
+        if (!outputPath) {
+          console.warn('Error: Cannot use --remove-spaces without --output');
+        }
         fileName = fileName.replace(/ /g, '');
       }
 
