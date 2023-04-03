@@ -84,11 +84,17 @@ const handleFile = async (filePath: string): Promise<void> => {
       await handleFolder(filePath, false);
     } else if (isImage(filePath)) {
       const inputBuffer = await fs.promises.readFile(filePath);
+
+      if (quality < 0 || quality > 100) {
+        console.error(`Invalid quality value: ${quality}`);
+        process.exit(1);
+      }
+
       const outputBuffer = await (sharp(inputBuffer).resize({ width }) as any)
         [format]({ quality })
         .toBuffer();
 
-      if (!fs.existsSync(outputPath)) {
+      if (outputPath && !fs.existsSync(outputPath)) {
         fs.mkdirSync(outputPath);
       }
 
